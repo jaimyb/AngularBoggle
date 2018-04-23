@@ -1,12 +1,12 @@
 export class Die{
     
     Id: number;
-    CurrentLetter: string;
-    Row: number;
-    Column: number;
+    Character: string;
+    Coordinates: Array<number>;
     
-
-    constructor(){
-
+    constructor(id: number, character: string, coordinates: Array<number>){
+        this.Id = id;
+        this.Character = character;
+        this.Coordinates = coordinates;
     }
 }

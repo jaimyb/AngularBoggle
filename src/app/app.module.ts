@@ -7,7 +7,8 @@ import { BoardComponent } from './board/board.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PlayerComponent } from './player/player.component';
 import { GameComponent } from './game/game.component';
-import { DieService } from './die.service';
+import { LeaderboardService } from './leaderboard.service';
+import { BoardService } from './board.service';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { DieService } from './die.service';
   imports: [
     BrowserModule
   ],
-  providers: [DieService],
+  providers: [LeaderboardService, BoardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
