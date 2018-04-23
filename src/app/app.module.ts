@@ -7,7 +7,6 @@ import { BoardComponent } from './board/board.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PlayerComponent } from './player/player.component';
 import { GameComponent } from './game/game.component';
-import { HeroService } from './hero.service';
 import { DieService } from './die.service';
 
 
@@ -22,7 +21,7 @@ import { DieService } from './die.service';
   imports: [
     BrowserModule
   ],
-  providers: [HeroService, DieService],
+  providers: [DieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
