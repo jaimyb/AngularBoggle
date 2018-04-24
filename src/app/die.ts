@@ -2,11 +2,10 @@ export class Die{
     
     Id: number;
     Character: string;
-    Coordinates: Array<number>;
+    Row: number;
+    Column: number;
     
-    constructor(id: number, character: string, coordinates: Array<number>){
+    constructor(id: number){
         this.Id = id;
-        this.Character = character;
-        this.Coordinates = coordinates;
     }
 }

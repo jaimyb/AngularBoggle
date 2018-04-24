@@ -6,7 +6,7 @@ export class Board{
     Dice: Array<Die>
     SelectedDice: Array<Die>
     
-    constructor(boardLayout: Array<Array<Die>>, Dice: Array<Die>){
+    constructor(boardLayout: Array<Array<Die>>, dice: Array<Die>){
         this.BoardLayout = boardLayout;
         this.Dice = dice;
     }

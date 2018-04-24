@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BoardComponent } from './board/board.component';
@@ -20,7 +20,8 @@ import { BoardService } from './board.service';
     GameComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [LeaderboardService, BoardService],
   bootstrap: [AppComponent]
