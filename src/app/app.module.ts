@@ -3,21 +3,21 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { BoardComponent } from './board/board.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
-import { PlayerComponent } from './player/player.component';
 import { GameComponent } from './game/game.component';
 import { LeaderboardService } from './leaderboard.service';
 import { BoardService } from './board.service';
+import { PlayerNameInputComponent } from './player-name-input/player-name-input.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BoardComponent,
     LeaderboardComponent,
-    PlayerComponent,
-    GameComponent
+    GameComponent,
+    PlayerNameInputComponent,
+
   ],
   imports: [
     BrowserModule,

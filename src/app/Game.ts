@@ -1,14 +1,12 @@
 import { Board } from './board';
+import { BoardService } from './board.service';
 
 export class Game {
-    
-    Player: string;
-    Date: string;
-    Score: number;
-    Time: number;
 
-    constructor(player: string, date: string){
-        this.Player = player;
-        this.Date = date;
+    Time: number;
+    Board: Board;
+
+    constructor(private BoardService: BoardService){
+        
     }
 }

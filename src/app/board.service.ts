@@ -29,7 +29,6 @@ const diceCharacters = [
 export class BoardService {
 
   private Url = "http://localhost:49885/api/Boards/";
-   
 
   constructor(private http: Http) { 
 
