@@ -7,7 +7,11 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { GameComponent } from './game/game.component';
 import { LeaderboardService } from './leaderboard.service';
 import { BoardService } from './board.service';
+import { DataService } from './data.service';
 import { PlayerNameInputComponent } from './player-name-input/player-name-input.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { MenuComponent } from './menu/menu.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,13 +21,16 @@ import { PlayerNameInputComponent } from './player-name-input/player-name-input.
     LeaderboardComponent,
     GameComponent,
     PlayerNameInputComponent,
+    MenuComponent,
 
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [LeaderboardService, BoardService],
+  providers: [LeaderboardService, BoardService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

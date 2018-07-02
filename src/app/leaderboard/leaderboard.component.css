@@ -1,0 +1,24 @@
+#leaderboard_header div{
+    color: #929292;
+    border-color: white;
+}
+
+#Leaderboard_container{
+    max-width: 600px;
+    margin: auto;
+}
+
+.leaderboard_item{
+    /* align-items: center !important;
+    justify-content: right !important;
+    display: flex !important; */
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    justify-content: center;
+}
+
+.leaderboard_row{
+    border-bottom: solid;
+    border-width: 1px;
+}

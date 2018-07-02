@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from '../data.service';
+
 
 @Component({
   selector: 'app-player-name-input',
@@ -8,13 +11,28 @@ import { Component, OnInit } from '@angular/core';
 export class PlayerNameInputComponent implements OnInit {
 
   name: string;
-  constructor() { }
 
+  get player(){
+    return this.dataService.Player;
+  }
+  set player(value: string){
+    this.dataService.Player = value;
+  }
+
+  constructor(private router: Router, private dataService : DataService) { }
+  
   ngOnInit() {
+    this.name = this.player;
   }
 
-  private StartNewGame(){
-    
+  private ConfirmName(event){
+    console.log(event);
+    if(this.name != ""){
+      this.player = this.name;
+      this.router.navigate(['/menu']);
+    }
+    else{
+      alert("Please enter a name.");
+    }
   }
-
 }

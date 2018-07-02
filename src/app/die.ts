@@ -4,6 +4,7 @@ export class Die{
     Character: string;
     Row: number;
     Column: number;
+    Selected: boolean;
     
     constructor(id: number){
         this.Id = id;

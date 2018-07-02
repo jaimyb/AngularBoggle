@@ -1,3 +1,36 @@
-<p>
-  game works!
-</p>
+<div id="game-info">
+  <progress id="time" max="180" value="{{Game?.Time}}"></progress>
+  <div class="score">
+    <div class="score">Score: </div> <div class="score">{{Game?.Board.Score}}</div>
+  </div>
+  <h2 contenteditable="true">{{Game?.CurrentWord}}</h2>
+</div>
+
+<div id="button-grid">
+  <div id="boggle_row_0" class="section group boggle_row">
+    <button id="0" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[0].Selected">{{Game?.Board.Dice[0].Character}}</button>
+    <button id="1" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[1].Selected">{{Game?.Board.Dice[1].Character}}</button>
+    <button id="2" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[2].Selected">{{Game?.Board.Dice[2].Character}}</button>
+    <button id="3" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[3].Selected">{{Game?.Board.Dice[3].Character}}</button>
+  </div>
+  <div id="boggle_row_1" class="section group boggle_row">
+    <button id="4" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[4].Selected">{{Game?.Board.Dice[4].Character}}</button>
+    <button id="5" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[5].Selected">{{Game?.Board.Dice[5].Character}}</button>
+    <button id="6" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[6].Selected">{{Game?.Board.Dice[6].Character}}</button>
+    <button id="7" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[7].Selected">{{Game?.Board.Dice[7].Character}}</button>
+  </div>
+  <div id="boggle_row_2" class="section group boggle_row">
+    <button id="8" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[8].Selected">{{Game?.Board.Dice[8].Character}}</button>
+    <button id="9" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[9].Selected">{{Game?.Board.Dice[9].Character}}</button>
+    <button id="10" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[10].Selected">{{Game?.Board.Dice[10].Character}}</button>
+    <button id="11" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[11].Selected">{{Game?.Board.Dice[11].Character}}</button>
+  </div>
+  <div id="boggle_row_3" class="section group boggle_row">
+    <button id="12" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[12].Selected">{{Game?.Board.Dice[12].Character}}</button>
+    <button id="13" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[13].Selected">{{Game?.Board.Dice[13].Character}}</button>
+    <button id="14" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[14].Selected">{{Game?.Board.Dice[14].Character}}</button>
+    <button id="15" class="col span_1_of_4 dice" (click)="DiceClick($event)" [class.selected]="Game?.Board.Dice[15].Selected">{{Game?.Board.Dice[15].Character}}</button>
+  </div>
+</div>
+
+<button id="check-input" (click)="CheckInput($event)">Check Input</button>

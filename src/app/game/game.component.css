@@ -1,0 +1,17 @@
+.selected{
+    background-color: green;
+}
+
+.score{
+    display: inline-block;
+}
+
+#button-grid{
+    max-width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h2:empty:before {
+    content:' ';
+}

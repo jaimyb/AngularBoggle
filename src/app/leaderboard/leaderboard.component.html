@@ -1,3 +1,71 @@
-<p>
-  leaderboard works!
-</p>
+<h1 id="leaderboard_header">Leaderboard</h1>
+<div id="Leaderboard_container">
+  <div id="Leaderboard_header" class="section group leaderboard_row">
+    <div class="col span_1_of_4 leaderboard_item">Player</div>
+    <div class="col span_1_of_4 leaderboard_item">Date</div>
+    <div class="col span_1_of_4 leaderboard_item">Score</div>
+    <div class="col span_1_of_4 leaderboard_item"></div>
+  </div>
+  <div id="Leaderboard_items">
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[0]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[0]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[0]?.Score}}</div>
+      <button id="{{LeaderboardItems[0]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[1]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[1]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[1]?.Score}}</div>
+      <button id="{{LeaderboardItems[1]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[2]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[2]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[2]?.Score}}</div>
+      <button id="{{LeaderboardItems[2]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[3]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[3]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[3]?.Score}}</div>
+      <button id="{{LeaderboardItems[3]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[4]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[4]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[4]?.Score}}</div>
+      <button id="{{LeaderboardItems[4]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[5]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[5]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[5]?.Score}}</div>
+      <button id="{{LeaderboardItems[5]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[6]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[6]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[6]?.Score}}</div>
+      <button id="{{LeaderboardItems[6]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[7]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[7]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[7]?.Score}}</div>
+      <button id="{{LeaderboardItems[7]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[8]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[8]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[8]?.Score}}</div>
+      <button id="{{LeaderboardItems[8]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+    <div id="" class="section group leaderboard_row">
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[9]?.Player}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[9]?.Date}}</div>
+      <div class="col span_1_of_4 leaderboard_item">{{LeaderboardItems[9]?.Score}}</div>
+      <button id="{{LeaderboardItems[9]?.BoardId}}" class="col span_1_of_4 leaderboard_item" (click)="PlayBoard($event)">Play Board</button>
+    </div>
+  </div>
+</div>

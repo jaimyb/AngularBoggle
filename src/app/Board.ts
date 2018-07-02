@@ -13,5 +13,6 @@ export class Board{
     constructor(boardLayout: Array<Array<Die>>, dice: Array<Die>){
         this.BoardLayout = boardLayout;
         this.Dice = dice;
+        this.Score = 0;
     }
 }

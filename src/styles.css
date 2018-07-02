@@ -1,1 +1,110 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+app-root{
+    height: 100%;
+}
+
+body{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    background-color: #283e65;
+
+}
+
+html{
+    margin: 0;
+    height: 100%;
+    min-height: 100% !important;
+}
+
+
+div{
+    color: white;
+}
+
+button{
+    background-color: #e7e7e7; /* Green */
+    border: none;
+    color: black;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    min-height: 50px;
+    max-width: 150px;
+}
+
+input{
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 20px;
+    flex: 2;
+}
+
+progress{
+    width: 100%;
+    background-color: white;
+    color: #283e65; 
+}
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+    width: 100%;
+}
+.span_3_of_4 {
+    width: 74.6%;
+}
+.span_2_of_4 {
+    width: 49.2%;
+}
+.span_1_of_4 {
+    width: 23.8%;
+}
+
+div.section div{
+    min-height: 35px;
+}
+
+.container{
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+}
